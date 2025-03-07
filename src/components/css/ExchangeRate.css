@@ -1,0 +1,86 @@
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.exchange-rate {
+    margin-top: 10px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+   width: 600px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+}
+
+
+.exchange-rate:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.exchange-rate h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.exchange-rate p {
+    font-size: 18px;
+    padding: 12px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+
+.exchange-rate p:hover {
+    background: #2575fc;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.loading {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .exchange-rate {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .exchange-rate h2 {
+        font-size: 24px;
+        
+    }
+
+    .exchange-rate p {
+        font-size: 16px;
+    }
+}
