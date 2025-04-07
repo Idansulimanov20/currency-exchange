@@ -33,10 +33,10 @@ export default function ExchangeRate() {
            
             {!loading && symbols ? 
                     Object.entries(rate).map(([currency, rate]) => {
-                        const symbol = symbols[currency]?.symbol || '';  // Get symbol property, fallback to empty string
+                        const symbol = symbols[currency]?.symbol || '';  
                         return (
                             <p key={currency}>
-                                {currency} :{rate} {symbol}
+                                {currency} :{parseFloat(rate.toFixed(3))} {symbol}
                             </p>
                         );
                     }) :
